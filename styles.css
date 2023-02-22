@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2? family= Hanken+Grotesk:wght@500;700;800 & display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    font-size: 1.8rem;
+    display: grid;
+    place-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 4rem;
+  }
+
+  @media (max-width:750px){
+
+    body {
+      margin: 0 auto;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .justify {
+    text-align: center;
+  }
+
+  .lavander {
+    color: hsl(241, 100%, 89%);
+  }
+  .white {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .contenedor-principal {
+    width: 73rem;
+    height: 51rem;
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+  }
+  @media (max-width:750px){
+
+    .contenedor-principal {
+      display: grid;
+      grid-template-columns: unset;
+      grid-template-rows: repeat(2,1fr);
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .your-result {
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;   
+  }
+
+  @media (max-width:750px){
+
+    .your-result {
+      border-radius: 0 0 6rem 6rem;
+    }
+  }
+
+  .numero {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    padding: 4rem 5.5rem 4rem 5.5rem;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .numero h1 {
+    font-size: 6rem;
+  }
+
+  .sumary {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+
+  @media (max-width:750px){
+
+    .sumary {
+      padding: 3rem;
+    }
+  } 
+
+  .reaction, .memory, .verbal, .visual {
+    padding: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+  }
+
+  .btn-continue {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 12rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 2rem;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid transparent;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s; 
+  }
+  .btn-continue:hover {
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
+
+
+  .reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
+  }
+
+  .memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
+  }
+
+  .verbal {
+    background-color: hsl(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+  }
+
+  .visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+  }
+
+  .align-emocion {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+ .izquierda {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+  }
+
+  .derecha {
+    display: flex;
+    justify-content: right;
+    color: hsl(241, 100%, 89%);
+  }
+  .derecha b{
+    color: hsl(224, 30%, 27%);
+  }
+  .attribution {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+
+
+
